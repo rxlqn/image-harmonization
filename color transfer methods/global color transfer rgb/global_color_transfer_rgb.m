@@ -38,11 +38,3 @@ bgm=uint8(fg2bg_mask(mask_tgt));
 
 %final image = color-transfered foreground and original background
 final_im1=new_im1+(img_tgt.*bgm);
-
-
-
-
-
-
-
-

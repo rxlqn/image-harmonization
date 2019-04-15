@@ -44,13 +44,13 @@ new_im_tgt = M*[im_tgt ones(size(im_tgt,1), 1)]';
 new_im_tgt = new_im_tgt(1:3,:)';
 
 % visualization   %comment all code below
-% figure, subplot(2,2,1), plot3(im_src(:,1), im_src(:,2), im_src(:,3), 'r.');
-% xlabel('R'), ylabel('G'), zlabel('B');
-% axis([0 255 0 255 0 255]), grid on, title('source');
-% subplot(2,2,2), plot3(im_tgt(:,1), im_tgt(:,2), im_tgt(:,3), 'g.');
-% xlabel('R'), ylabel('G'), zlabel('B');
-% axis([0 255 0 255 0 255]), grid on, title('target');
-% subplot(2,2,3), plot3(new_im_tgt(:,1), new_im_tgt(:,2), new_im_tgt(:,3), 'b.');
-% xlabel('R'), ylabel('G'), zlabel('B');
-% axis([0 255 0 255 0 255]), grid on, title('converted');
+figure, subplot(2,2,1), plot3(im_src(:,1), im_src(:,2), im_src(:,3), 'r.');
+xlabel('R'), ylabel('G'), zlabel('B');
+axis([0 255 0 255 0 255]), grid on, title('source');
+subplot(2,2,2), plot3(im_tgt(:,1), im_tgt(:,2), im_tgt(:,3), 'g.');
+xlabel('R'), ylabel('G'), zlabel('B');
+axis([0 255 0 255 0 255]), grid on, title('target');
+subplot(2,2,3), plot3(new_im_tgt(:,1), new_im_tgt(:,2), new_im_tgt(:,3), 'b.');
+xlabel('R'), ylabel('G'), zlabel('B');
+axis([0 255 0 255 0 255]), grid on, title('converted');
 

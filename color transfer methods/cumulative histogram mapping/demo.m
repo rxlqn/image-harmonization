@@ -233,7 +233,7 @@ for TypeIndex=1:4
 %         %imwrite(final_IR_mkl,sprintf('%s_mkl_%s_%g_%g.jpg',dataType,cat.name,imgId1,imgId2)); 
 %         imwrite(final_IR_idt_regrain,sprintf('%s_%g_idt_%g.jpg',dataType,imgId1,imgId2)); 
 %         cd(filepath);    
-%% cumulative histogram matching 
+%% cumulative histogram matching  
 
         new_im1 = perform_cumulative_histogram_mapping(I1, I2, bm1>0, bm2>0);
         
